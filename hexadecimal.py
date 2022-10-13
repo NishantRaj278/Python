@@ -1,0 +1,5 @@
+u=int(input())
+a=hex(u)
+b='{0:o}'.format(u)
+c='{0:b}'.format(u)
+print(a,b,c,sep="$")
