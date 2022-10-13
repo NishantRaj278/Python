@@ -1,0 +1,13 @@
+a=float(input('Enter your value:'))
+b="{0:.2f}".format(a)
+c="{0:.5f}".format(a)
+d="{0:.7f}".format(a)
+e="{0:.9f}".format(a)
+f="{0:.11f}".format(a)
+g="{0:.13f}".format(a)
+h="{0:.15f}".format(a)
+i="{0:.17f}".format(a)
+j="{0:.19f}".format(a)
+k="{0:.21f}".format(a)
+
+print(b,c,d,e,f,g,h,i,j,k,sep="\n")
