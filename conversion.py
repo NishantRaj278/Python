@@ -1,0 +1,6 @@
+u=int(input('u:'))
+v=int(input('v:'))
+a=complex(u,v)
+b="{0:b}".format(u)
+c="{0:o}".format(v)
+print(a,b,c,sep="^")
