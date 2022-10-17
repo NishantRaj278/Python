@@ -1,0 +1,5 @@
+n=int(input("n: "))
+x=int(n*(n+1)/2)
+y=int(n*(n+1))
+print(x)
+print(y)
