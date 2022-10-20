@@ -1,0 +1,5 @@
+b=float(input("b: "))
+h=float(input("h: "))
+area=float((h*b)/2)
+r="{0:.3f}".format(area)
+print("Area:",r)
