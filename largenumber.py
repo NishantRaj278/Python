@@ -1,0 +1,7 @@
+x=str(input())
+w=int(x[0])
+v=int(x[1])
+p=int(x[-1])
+q=int(x[-2])
+print(w+v,p+q)
+print((w+v)*(p+q))
