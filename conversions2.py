@@ -1,0 +1,6 @@
+p=int(input("p:"))
+q=int(input("q:"))
+w="{0:x}".format(p)
+v="{0:x}".format(q)
+t=complex(p,q)
+print(w,v,t,sep="??")
