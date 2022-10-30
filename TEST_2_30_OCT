@@ -1,0 +1,176 @@
+#Q1) Print First 10 natural numbers using while loop
+
+'''i=1
+while(i<=10):
+    print(i)
+    i+=1'''
+
+#Q2) Write a program to print the following number pattern using a loop.
+
+'''rows = 5
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print(j, end=' ')
+    print(" ")
+'''
+
+#Q3) Write a program to accept a number from a user and calculate the sum of all numbers from 1 to a given number
+#For example, if the user entered 10 the output should be 55 (1+2+3+4+5+6+7+8+9+10)
+
+'''num=int(input("Enter the number:"))
+sum=0
+for n in range(0,num+1,1):
+    sum=sum+n
+print("Sum is:",sum)'''
+
+#Q4) Write a program to print multiplication table of a given number
+
+'''num=int(input("enter the number:"))
+for i in range(1,11):
+    print(num*i)'''
+
+
+#Q5) Display numbers from a list using loop
+#    Write a program to display only those numbers from a list that satisfy the following conditions
+#      a)The number must be divisible by five
+#      b)If the number is greater than 150, then skip it and move to the next number
+#      c)If the number is greater than 500, then stop the loop
+
+'''numbers = [12, 75, 150, 180, 145, 525, 50]
+for i in numbers:
+    if i>150:
+        if i>500:
+            break
+        continue
+    if i%5==0:
+        print(i)
+    i=i+1'''
+
+#Q6) Count the total number of digits in a number
+#Write a program to count the total number of digits in a number using a while loop
+
+'''n=int(input())
+count=0
+while(n!=0):
+    n= n//10
+    count=count+1
+print(count)'''
+
+#Q7) Print the following pattern
+#Write a program to use for loop to print the following reverse number pattern
+
+'''rows=5
+for i in range(rows,0,-1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print(" ")'''
+
+#Q8) Print list in reverse order using a loop
+
+'''list1 = [10, 20, 30, 40, 50]
+for i in reversed(list1):
+    print(i)'''
+
+#Q9) Display numbers from -10 to -1 using for loop
+
+'''i=0
+for i in range(-10,0,1):
+    print(i)'''
+
+#Q10) Use else block to display a message “Done” after successful execution of for loop
+
+'''i=0
+for i in range(5):
+    print(i)
+else:
+    print("Done!")'''
+
+#Q11) Write a program to display all prime numbers within a range
+#A Prime Number is a number that cannot be made by multiplying other whole numbers. A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers
+
+'''start=int(input("start="))
+end=int(input("end="))
+for i in range(start,end+1):
+    if i>1:
+        for j in range(2,i):
+            if i%j==0:
+                break
+            
+        else:
+            print(i)'''
+
+#Q12) Display Fibonacci series up to 10 terms
+
+'''n1=0
+n2=1
+x=10
+count=0
+while(count<x):
+    print(n1,end=" ")
+    n3=n1+n2
+    n1=n2
+    n2=n3
+    count+=1'''
+
+   
+#Q13) Find the factorial of a given number
+
+'''n=int(input("Enter the number:"))
+f=1
+for i in range(1,n+1):
+    f=f*i
+print("the factorial of",n,"is:",f)'''
+
+#Q14) Reverse a given integer number
+
+'''x=76542
+r=0
+while(x!=0):
+    digit=x%10
+    r=r*10+digit
+    x//=10
+print(r)'''
+
+#Q15) Use a loop to display elements from a given list present at odd index positions
+
+'''my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+for i in range(1,len(my_list),2):
+    print(my_list[i],end=" ")'''
+
+#Q16) Calculate the cube of all numbers from 1 to a given number
+
+'''n=int(input())
+num1=1
+for i in range(num1,n+1):
+    print("Current number is:",i,"and the cube is:",i**3)'''
+
+#Q17) Find the sum of the series upto n terms
+#Write a program to calculate the sum of series up to n term. For example, if n =5 the series will become 2 + 22 + 222 + 2222 + 22222 = 24690
+
+'''n=5
+a=2
+b=0
+c=0
+count=0
+while(count<n):
+    b=b*10+a
+    c=c+b
+    count+=1
+print(c)'''
+
+#Q18) Print the following pattern
+#Write a program to print the following start pattern using the for loop
+
+'''rows=5
+for i in range(0,rows):
+    for j in range(1,i+1):
+        print("*",end=" ")
+    print("\r")
+for i in range(rows,0,-1):
+    for j in range(0,i):
+        print("*",end=" ")
+    print("\r")'''
+
+
+
+    
